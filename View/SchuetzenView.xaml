@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="View.SchuetzenView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:View"
+             mc:Ignorable="d" 
+             Background="White">
+    <StackPanel Orientation="Horizontal">
+        <StackPanel>
+            <TextBlock Text="Vorname : " Height="18" Width="100"/>
+            <TextBlock Text="Nachname : " Height="18" Width="100"/>
+            <TextBlock Text="Schiessnummer : " Height="18" Width="100"/>
+            <TextBlock Text="Email: " Height="18" />
+            
+        </StackPanel>
+        <StackPanel Width="150">
+            <TextBox Text="{Binding VName}" Height="18" Width="150" HorizontalAlignment="Left"/>
+            <TextBox Text="{Binding NName}" Height="18" Width="150" HorizontalAlignment="Left"/>
+            <TextBox Text="{Binding SchiessNr}" Height="18" Width="150" HorizontalAlignment="Left"/>
+            <TextBox Text="{Binding Email}" Height="18" Width="150" HorizontalAlignment="Left"/>
+            <Button Content="Speichern" Command="{Binding SaveSchuetzenCommand}"  Width="100" HorizontalAlignment="Right" Background="DarkGray" VerticalAlignment="Bottom"/>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

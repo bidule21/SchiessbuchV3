@@ -52,6 +52,9 @@
     <Compile Include="SchuetzenListView.xaml.cs">
       <DependentUpon>SchuetzenListView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SchuetzenView.xaml.cs">
+      <DependentUpon>SchuetzenView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Include="ErgebnisseListView.xaml">
@@ -59,6 +62,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="SchuetzenListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SchuetzenView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
